@@ -1,0 +1,106 @@
+/*General CSS*/
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: row;
+  font-family: 'Open Sans', Arial, sans-serif;
+  line-height: 1.5;
+  font-size: 0.9em;
+  color: #4d4e53;
+}
+
+header {
+  font-size: 1.8em;
+  font-weight: thin;
+  color: black;
+  text-align: left;
+}
+
+#nav-header {
+  text-align: center;
+  margin: 10px 0;
+}
+
+
+/*Navbar CSS*/
+#navbar {
+  background-color: white;
+  width: 25%;
+  border-right: 3px solid #4d4e53;
+  font-family: 'Open Sans', Arial, sans-serif;
+  font-size: 1.0em;
+  position: fixed;
+}
+
+#navbar ul {
+  height: 90vh;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+#navbar ul > li {
+  border-top: 1px solid black;
+  padding: 10px 0 10px 40px;
+  text-align: justify;
+}
+
+#navbar ul > li > a {
+  color: #4d4e53;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+#navbar ul > li > a:hover {
+  font-weight: 800;
+}
+
+
+/*Main content Css*/
+#main-doc {
+  width: 75%;
+  padding: 20px;
+  margin-left: 350px;
+}
+
+#main-doc section > article > ul > li {
+  margin-bottom: 10px;
+  list-style-position: inside;
+  text-align: justify;
+}
+
+#main-doc #nested-list {
+  padding-left: 40px;
+}
+
+.main-section {
+  margin-bottom: 20px;
+}
+
+code {
+  display: block;
+  background-color: #f7f7f7;
+  border-radius: 5px;
+  width: 100%;
+  padding: 15px;
+  line-height: 2;
+  margin: 10px;
+}
+
+p {
+  margin: 10px 0;
+  text-align: justify;
+}
+
+
+/*MEDIA QUERIES*/
+@media only screen and (max-width: 800px) {
+  body {
+    color: green;
+    flex-direction: column;
+  }
+}
