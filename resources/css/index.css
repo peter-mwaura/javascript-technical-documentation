@@ -38,7 +38,7 @@ header {
 }
 
 #navbar ul {
-  height: 90vh;
+  height: 88vh;
   overflow-x: hidden;
   overflow-y: auto;
 }
@@ -97,10 +97,23 @@ p {
 }
 
 
-/*MEDIA QUERIES*/
-@media only screen and (max-width: 800px) {
+/*Media Queries*/
+@media (max-width: 600px) {
   body {
-    color: green;
     flex-direction: column;
+  }
+  #navbar {
+    width: 100%;
+    position: static;
+  }
+  #navbar ul {
+    height: 88vh;
+    overflow-x: hidden;
+    overflow-y: scroll;
+  }
+  #main-doc {
+    width: 100%;
+    margin-top: -20px;
+    margin-left: unset;
   }
 }
