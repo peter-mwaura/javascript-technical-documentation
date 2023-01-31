@@ -98,6 +98,7 @@ p {
 
 
 /*Media Queries*/
+/*Small, Medium and Large Mobile Screen sizes*/
 @media (max-width: 600px) {
   body {
     flex-direction: column;
@@ -106,14 +107,18 @@ p {
     width: 100%;
     position: static;
   }
+  #nav-header {
+    text-align: left;
+    padding-left: 38px;
+  }
   #navbar ul {
-    height: 88vh;
-    overflow-x: hidden;
-    overflow-y: scroll;
+    height: 100vh;
+    overflow-x: unset;
+    overflow-y: unset;
   }
   #main-doc {
     width: 100%;
-    margin-top: -20px;
+    margin-top: 40px;
     margin-left: unset;
   }
 }
